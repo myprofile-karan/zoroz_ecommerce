@@ -1,5 +1,3 @@
-# Updates!
-
 This new version contains an integration with redux-toolkit instead of redux and it's witch Typescript :)
 
 # Next.js Ecommerce
@@ -27,8 +25,8 @@ This repo contains a work in progress Ecommerce responsive made with Next.js, Re
 
 ## Next TO-DO
 
-- [X] Checkout page
-- [ ] Add Facebook login
-- [ ] Add Google login
-- [ ] Add Proptypes on components
-- [ ] Use CSS variables instead of static colors
+- Checkout page
+- Add Facebook login
+- Add Google login
+- Add Proptypes on components
+- Use CSS variables instead of static colors
