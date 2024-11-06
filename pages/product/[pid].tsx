@@ -30,7 +30,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 }
 
 const Product = ({ product }: ProductPageType) => {
-  const [showBlock, setShowBlock] = useState('description');
+  const [showBlock] = useState('description');
 
   return (
     <Layout>
