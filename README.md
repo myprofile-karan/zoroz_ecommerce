@@ -13,9 +13,7 @@ This repo contains a work in progress Ecommerce responsive made with Next.js, Re
 - Products page: /products
 - Product single page: /product/1
 - Cart page: /cart
-- Login page: /login
-- Register page: /register
-- 404 page: /page-not-found
+- Checkout page /checkout
 
 ## Screenshots
 
@@ -25,8 +23,6 @@ This repo contains a work in progress Ecommerce responsive made with Next.js, Re
 
 ## Next TO-DO
 
-- Checkout page
 - Add Facebook login
 - Add Google login
-- Add Proptypes on components
-- Use CSS variables instead of static colors
+
