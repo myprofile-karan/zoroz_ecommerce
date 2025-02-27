@@ -1,11 +1,9 @@
 module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'jsdom',
+  preset: 'ts-jest',  // Ensure ts-jest is set as the preset
+  testEnvironment: 'node', // or 'jsdom' if you are testing a frontend app
   transform: {
-    '^.+\\.tsx?$': 'ts-jest', // Process TypeScript files
+    '^.+\\.tsx?$': 'ts-jest', // Use ts-jest to process TypeScript files
   },
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'], // Ignore these folders
-  moduleFileExtensions: ['js', 'ts', 'tsx', 'json', 'node'], // Add TypeScript support
-  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'], // Setup Jest DOM for assertions
-  testMatch: ['**/?(*.)+(spec|test).ts?(x)'], // Look for test files with .test.tsx or .spec.tsx
+  testMatch: ['**/?(*.)+(spec|test).ts?(x)'], // Match test files
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'node'],
 };
