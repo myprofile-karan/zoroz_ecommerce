@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build your project (for TypeScript or SCSS, depending on your setup)
-RUN npm run build  # You might have different commands for TypeScript or SCSS
+RUN npm install --legacy-peer-deps  # You might have different commands for TypeScript or SCSS
 
 # Expose the port on which your app will run (usually 3000 for Node.js apps)
 EXPOSE 3000
