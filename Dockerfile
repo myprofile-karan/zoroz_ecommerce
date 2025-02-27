@@ -7,14 +7,11 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies (use --legacy-peer-deps to bypass peer dependency conflicts)
+RUN npm install --legacy-peer-deps
 
 # Copy the rest of the application code
 COPY . .
-
-# Build your project (for TypeScript or SCSS, depending on your setup)
-RUN npm install --legacy-peer-deps  # You might have different commands for TypeScript or SCSS
 
 # Expose the port on which your app will run (usually 3000 for Node.js apps)
 EXPOSE 3000
