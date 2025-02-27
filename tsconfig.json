@@ -1,16 +1,53 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "allowJs": true
+    /* Basic Options */
+    "target": "esnext", /* Specify ECMAScript target version: 'ES3', 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ESNEXT' */
+    "module": "esnext", /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext' */
+    "lib": [
+      "es6",
+      "es7",
+      "esnext",
+      "dom"
+    ], /* Specify library files to be included in the compilation */
+    "allowJs": true, /* Allow JavaScript files to be compiled */
+    "jsx": "preserve", /* JSX code generation: 'preserve', 'react-native', or 'react' */
+    "removeComments": false, /* Do not remove comments from output */
+    "moduleResolution": "node", /* Use node module resolution */
+    "baseUrl": ".", /* Base directory to resolve non-absolute module names */
+    "esModuleInterop": true, /* Enables interoperability between CommonJS and ES Modules */
+    "skipLibCheck": true, /* Skip library checks for faster builds */
+    "forceConsistentCasingInFileNames": true, /* Ensure consistent file name casing */
+    "resolveJsonModule": true, /* Allow importing JSON modules */
+    "isolatedModules": true, /* Ensures each file is treated as a separate module */
+    "noEmit": true, /* Do not emit output files (useful for Next.js, as it handles output) */
+    "incremental": true, /* Enable incremental compilation for faster rebuilds */
+
+    /* Strict Type-Checking Options */
+    "strict": true, /* Enable all strict type-checking options */
+    "noImplicitAny": true, /* Raise error on expressions and declarations with an implied 'any' type */
+    "strictNullChecks": true, /* Enable strict null checks */
+    "strictFunctionTypes": true, /* Enable strict checking of function types */
+    "strictPropertyInitialization": true, /* Enable strict checking of property initialization in classes */
+    "noImplicitThis": true, /* Raise error on 'this' expressions with an implied 'any' type */
+    "alwaysStrict": true, /* Parse in strict mode and emit "use strict" for each source file */
+
+    /* Additional Checks */
+    "noUnusedLocals": true, /* Report errors on unused locals */
+    "noUnusedParameters": true, /* Report errors on unused parameters */
+    "noImplicitReturns": true, /* Report error when not all code paths in function return a value */
+    "noFallthroughCasesInSwitch": true, /* Report errors for fallthrough cases in switch statements */
+    
+    /* Source Map Options */
+    "inlineSourceMap": true, /* Emit a single file with source maps */
+    "inlineSources": true, /* Emit the source alongside the sourcemaps */
+    "sourceMap": true /* Enable source maps */
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "pages/**/*",
+    "src/**/*", /* Include all TypeScript/JSX files inside the `src` folder */
+    "next-env.d.ts" /* Include Next.js types */
+  ],
+  "exclude": [
+    "node_modules" /* Exclude `node_modules` directory */
+  ]
 }
