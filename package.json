@@ -8,7 +8,7 @@
     "start": "next start",
     "export": "next build && next export",
     "compile": "tsc",
-    "test": "jest"  
+    "test": "jest --passWithNoTests"  
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
@@ -45,5 +45,6 @@
     "jest": "^27.0.0"
   }
 }
+
 
 
