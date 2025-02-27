@@ -7,10 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "compile": "tsc",  // Adds the 'compile' script to run TypeScript compiler
-    "test": "jest",  // Assuming you're using Jest for testing
-    "docker-build": "docker build -t next-ecommerce .",  // Docker build command
-    "docker-run": "docker run -p 3000:3000 next-ecommerce"  // Docker run command
+    "compile": "tsc"
   },
   "keywords": [
     "react",
@@ -49,7 +46,6 @@
     "@types/react-dom": "^16.9.8",
     "fslightbox-react": "^1.5.0",
     "node-fetch": "^3.1.1",
-    "typescript": "^4.6.4",
-    "jest": "^27.4.5"  // Assuming you're using Jest for testing
+    "typescript": "^4.6.4"
   }
 }
